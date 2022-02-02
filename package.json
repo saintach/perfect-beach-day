@@ -1,0 +1,24 @@
+{
+  "name": "perfect-beach-day",
+  "version": "1.0.0",
+  "description": "Tells you if today is a perfect beach day",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/src/index.js",
+    "client": "node start-client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saintach/perfect-beach-day.git"
+  },
+  "author": "Nova Saint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saintach/perfect-beach-day/issues"
+  },
+  "homepage": "https://github.com/saintach/perfect-beach-day#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

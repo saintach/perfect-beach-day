@@ -1,0 +1,23 @@
+{
+  "name": "perfect-beach-day-server",
+  "version": "1.0.0",
+  "description": "Server side of the Perfect Beach Day.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch src ./src/index.js"
+  },
+  "author": "Nova Saint",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "axios": "^0.25.0",
+    "dotenv": "^15.0.0",
+    "koa": "^2.13.4",
+    "koa-cors": "0.0.16",
+    "koa-respond": "^2.1.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
