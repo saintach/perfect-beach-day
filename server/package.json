@@ -4,7 +4,8 @@
   "description": "Server side of the Perfect Beach Day.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch src ./src/index.js"
+    "dev": "nodemon --watch src ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "author": "Nova Saint",
   "license": "ISC",

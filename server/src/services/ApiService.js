@@ -15,8 +15,8 @@ class ApiService {
   static geocoding(axiosConfig) {
     return new ApiService({
       baseURL: config.api.geocoding_url,
-      ...axiosConfig
-    })
+      ...axiosConfig,
+    });
   }
   get(endpoint, params) {
     const result = this.axios.get(endpoint, {
