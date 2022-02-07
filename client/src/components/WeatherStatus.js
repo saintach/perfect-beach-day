@@ -4,7 +4,7 @@ import WindIcon from "@mui/icons-material/Air";
 import LocationIcon from "@mui/icons-material/LocationOn";
 import RainIcon from "@mui/icons-material/Umbrella";
 
-const Suggestion = ({ user, selectedHour }) => {
+export const Suggestion = ({ user, selectedHour }) => {
   const { temperature, wind } = user;
   const { temp, wind_speed, rain, weather } = selectedHour;
   const min_temp = temperature[0],
@@ -67,6 +67,9 @@ const Suggestion = ({ user, selectedHour }) => {
 };
 
 export default function CurrentWeatherStatus({ user, hourly, selectedIndex }) {
+  if (!user || !hourly || !hourly[selectedIndex]) {
+    return (<Typography>Oops! Something went wrong.</Typography>)
+  }
   const selectedHour = hourly[selectedIndex];
   const { temp, uvi, wind_speed, weather, feels_like, rain } = selectedHour;
   return (

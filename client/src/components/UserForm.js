@@ -5,7 +5,7 @@ import { FormInputDropdown } from "./FormInputs/FormInputDropdown";
 import { FormInputSlider } from "./FormInputs/FormInputSlider";
 import { FormInputRadio } from "./FormInputs/FormInputRadio";
 import { COUNTRIES } from "../constants/countries";
-import { DEFAULT_USER } from "../constants/user";
+import { DEFAULT_USER, DEFAULT_USER_IMPERIAL } from "../constants/user";
 
 const radioOptions = [
   {

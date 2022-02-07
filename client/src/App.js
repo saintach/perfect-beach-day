@@ -6,14 +6,7 @@ import TimeSelection from "./components/TimeSelection";
 import CurrentWeatherStatus from "./components/WeatherStatus";
 import UserForm from "./components/UserForm.js";
 import { useLocalStorage } from "./hooks/useLocalStorage";
-
-const DEFAULT_USER = {
-  city: '',
-  country: '',
-  unit: "metric",
-  temperature: [18, 30],
-  wind: [0, 15]
-}
+import { DEFAULT_USER } from "./constants/user";
 
 const App = () => {
   // User data

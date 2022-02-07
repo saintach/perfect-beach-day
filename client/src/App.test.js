@@ -26,6 +26,8 @@ test("renders without crashing", () => {
   render(<App />, div);
 });
 
+test.todo("should show form when user click the link")
+
 test("should show the current weather if user data is valid", async () => {
   render(<App />);
   selectCountry();
