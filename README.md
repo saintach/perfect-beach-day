@@ -1,4 +1,4 @@
-# Perfect Beach Day
+# Perfect Beach Day 🏖️
 Tells you if today is a perfect beach day at a given location and preferences. It uses Open Weather API to get the weather data.
 
 ## To Start the project
