@@ -40,13 +40,12 @@ const App = () => {
         units: unit,
       };
       try {
-        const response = await axios.get(`/today`, { params });
+        const response = await axios.get(`http://localhost:3001/today`, { params }); // TODO: replace url and port with env var
         setToday(response.data);
         setError();
       } catch (e) {
         setError("Error fetching today's weather. Please enter the correct city.");
         setShowForm(true);
-        console.log(e);
       }
       setLoading(false);
     }

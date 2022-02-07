@@ -71,7 +71,7 @@ export default function CurrentWeatherStatus({ user, hourly, selectedIndex }) {
   const { temp, uvi, wind_speed, weather, feels_like, rain } = selectedHour;
   return (
     <>
-      <Stack direction="row" spacing={1} justifyContent="center">
+      <Stack direction="row" spacing={1} justifyContent="center" data-testid="current-weather">
         <img
           alt={weather[0].description}
           src={`http://openweathermap.org/img/wn/${weather[0].icon}@4x.png`}

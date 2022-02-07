@@ -14,7 +14,7 @@ export const FormInputDropdown = ({ name, control, label, options, mapping, rule
           field: { onChange, value },
           fieldState: { error }
         }) => (
-          <Select onChange={onChange} value={value} error={!!error} name={name} data-testid={name}>
+          <Select onChange={onChange} value={value} error={!!error} name={name}>
             {options.map((option) => (
               <MenuItem key={option[mapping['value']]} value={option[mapping['value']]}>
                 {option[mapping['label']]}

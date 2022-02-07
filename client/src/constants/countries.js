@@ -178,7 +178,7 @@ export const COUNTRIES = [
   },
   {
     name: "Aruba",
-    code: "NL",
+    code: "AB",
     capital: "Oranjestad",
     region: "SA",
     currency: {

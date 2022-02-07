@@ -20,3 +20,6 @@ cp .env.example .env
 cd ..
 npm run start
 ```
+
+NOTE:
+`npm test` requires server to be running at the port 3001.
