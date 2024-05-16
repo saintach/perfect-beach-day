@@ -64,13 +64,13 @@ const App = () => {
         ) : (
           <>
             <TimeSelection
-              hourly={today.hourly}
+              hourly={today.list}
               selectedIndex={selectedIndex}
               setSelectedIndex={setSelectedIndex}
               timeZone={today.timezone}
             />
             <CurrentWeatherStatus
-              hourly={today.hourly}
+              hourly={today.list}
               selectedIndex={selectedIndex}
               user={user}
             />

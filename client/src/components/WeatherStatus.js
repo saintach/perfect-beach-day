@@ -6,7 +6,10 @@ import RainIcon from "@mui/icons-material/Umbrella";
 
 export const Suggestion = ({ user, selectedHour }) => {
   const { temperature, wind } = user;
-  const { temp, wind_speed, rain, weather } = selectedHour;
+  const { weather, rain } = selectedHour;
+  const { temp } = selectedHour?.main;
+  const wind_speed = selectedHour?.wind?.speed;
+  
   const min_temp = temperature[0],
     max_temp = temperature[1];
   const min_wind = wind[0],
@@ -71,7 +74,8 @@ export default function CurrentWeatherStatus({ user, hourly, selectedIndex }) {
     return (<Typography>Oops! Something went wrong.</Typography>)
   }
   const selectedHour = hourly[selectedIndex];
-  const { temp, uvi, wind_speed, weather, feels_like, rain } = selectedHour;
+  const { weather, rain, wind } = selectedHour;
+  const { temp, feels_like, uvi } = selectedHour?.main;
   return (
     <>
       <Stack direction="row" spacing={1} justifyContent="center" data-testid="current-weather">
@@ -110,7 +114,7 @@ export default function CurrentWeatherStatus({ user, hourly, selectedIndex }) {
         <Chip
           color="warning"
           icon={<WindIcon />}
-          label={`Wind ${wind_speed}m/s`}
+          label={`Wind ${wind?.speed}m/s`}
           variant="filled"
         />
         <Chip

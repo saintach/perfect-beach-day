@@ -16,7 +16,7 @@ export class WeatherRouteHandler {
       // Otherwise proceed to getting today's weather data
       const { lat, lon } = geoResponse.data[0];
 
-      const response = await api.get("/onecall", {
+      const response = await api.get("/forecast", {
         exclude: "minutely,daily", // exclude unnecessary data
         lat,
         lon,
